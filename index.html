@@ -8,40 +8,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="title">Arsenal Supporters Feedback Form</h1>
     <div>
-      <p id="description">
-        A form to get a response from the fans if they think the club is being
-        managed properly.
-      </p>
+      <strong
+        ><h1 id="title">Arsenal Supporters Feedback Form</h1>
+        <p id="description">
+          A form to get a response from the fans if they think the club is being
+          managed properly.
+        </p>
+      </strong>
     </div>
     <main>
-      <form action="">
-        <div>
-          <label for="your-name">Name</label>
+      <form action="kazeem237@yahoo.com" id="survey-form">
+        <strong
+          ><div>
+            <label for="name">Name</label>
+            <br />
+            <input type="text" name="name" id="name" />
+          </div>
           <br />
-          <input type="text" name="name" id="your-name" />
-        </div>
+          <br />
+          <div>
+            <label for="email">Email</label>
+            <br />
+            <input type="email" name="Email" id="email" />
+          </div>
+          <br />
+          <br />
+          <div>
+            <label for="number">Age</label>
+            <br />
+            <input type="number" id="number" name="Age" min="1" /></div
+        ></strong>
         <br />
         <br />
         <div>
-          <label for="your-emmail">Email</label>
+          <strong>
+            <label for="Love"
+              >Which option best describes your relationship with
+              Arsenal?</label
+            >
+          </strong>
           <br />
-          <input type="email" name="Email" id="your-email" />
-        </div>
-        <br />
-        <br />
-        <div>
-          <label for="your-age">Age</label>
-          <br />
-          <input type="number" id="your-age" name="Age" min="1" />
-        </div>
-        <br />
-        <br />
-        <div>
-          <label for="Love">Which option best describes your relationship with Arsenal?<label>
-          <br />
-          <select name="Relationship with Arsenal" id="Love">
+          <select name="Relationship with Arsenal" id="dropdown">
             <option value="" disabled selected hidden>
               Select your relationship with Arsenal
             </option>
@@ -53,19 +61,29 @@
         </div>
         <br />
         <br />
+
         <div>
-          <p>Would you recommend your friends to support Arsenal?</p>         
-          <input type="radio" name="feedback" checked/> Definitely
+          <strong>
+            <label>
+              <label id="rad"> </label>Would you recommend your friends to
+              support Arsenal?</label
+            >
+          </strong>
+          <br />
+          <input type="radio" name="feedback" checked /> Definitely
           <br />
           <input type="radio" name="feedback" /> Maybe
           <br />
           <input type="radio" name="feedback" /> Not sure
         </div>
-        <br>
+        <br />
+        <br />
         <div>
-          <label for="player">Who is your favorite Arsenal Player?</label>
+          <strong>
+            <label for="player">Who is your favorite Arsenal Player?</label>
+          </strong>
           <br />
-          <select name="Who is your favorite Arsenal player?" id="player">
+          <select name="Who is your favorite Arsenal player" id="dropdownn">
             <option value="" disabled selected hidden>
               Select your favorite Arsenal player
             </option>
@@ -75,22 +93,49 @@
             <option value="Gabriel">Gabriel</option>
           </select>
         </div>
-        <br>
+        <br />
+        <br />
         <div>
-        <label for="lola">what will you like to see improved at Arsenal?(Check all that apply)</label>
-        <br>
-        <input type="checkbox"   name="Improvement" checked>Recruitment
-        <br>
-        <input type="checkbox"  name="Improvement">Communication
-        <br>
-        <input type="checkbox"  name="Improvement">Player performance
-        <br>
-        <input type="checkbox" name="Improvement">Well fair
+          <strong>
+            <label for="lola"
+              >what will you like to see improved at Arsenal?(Check all that
+              apply)</label
+            >
+          </strong>
+          <br />
+          <input type="checkbox" name="Improvement" checked />Recruitment
+          <br />
+          <input type="checkbox" name="Improvement" />Communication
+          <br />
+          <input type="checkbox" name="Improvement" />Player performance
+          <br />
+          <input type="checkbox" name="Improvement" />Well fair
         </div>
-        <label for="suggestion"> Do you have any other Suggestions?</label> 
-        <br>
-        <textarea name="Suggestions" id="suggestion" cols="30" rows="10"></textarea>
+        <br />
+        <br />
+        <strong>
+          <label id="suggestionss" for="suggestion">
+            Do you have any other Suggestions?</label
+          >
+        </strong>
+        <br />
+        <textarea
+          name="Suggestions"
+          id="suggestion"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <br />
+        <strong>
+        <button id="submit">Submit</button></strong>
       </form>
     </main>
+
+    <footer>
+      <p id="link">
+        Here is a link to get the latest news about Arsenal football club.
+        <a href="https://www.arsenal.com/">Arsenal</a>
+      </p>
+    </footer>
   </body>
 </html>
