@@ -17,20 +17,79 @@
     </div>
     <main>
       <form action="">
-        <label for="your-name">Name</label>
-        <br />
-        <input type="text" name="name" id="your-name" />
-        <br />
-        <br />
-        <label for="your-emmail">Email</label>
-        <br />
-        <input type="email" name="Email" id="your-email" />
+        <div>
+          <label for="your-name">Name</label>
+          <br />
+          <input type="text" name="name" id="your-name" />
+        </div>
         <br />
         <br />
-
-        <label for="your-age">Age</label>
-
-        <input type="number" id="your-age" name="Age" />
+        <div>
+          <label for="your-emmail">Email</label>
+          <br />
+          <input type="email" name="Email" id="your-email" />
+        </div>
+        <br />
+        <br />
+        <div>
+          <label for="your-age">Age</label>
+          <br />
+          <input type="number" id="your-age" name="Age" min="1" />
+        </div>
+        <br />
+        <br />
+        <div>
+          <label for="Love">Which option best describes your relationship with Arsenal?<label>
+          <br />
+          <select name="Relationship with Arsenal" id="Love">
+            <option value="" disabled selected hidden>
+              Select your relationship with Arsenal
+            </option>
+            <option value="Broken">Broken</option>
+            <option value="Fragile">Fragile</option>
+            <option value="Permanent">Permanent</option>
+            <option value="Difficult">Difficult</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p>Would you recommend your friends to support Arsenal?</p>         
+          <input type="radio" name="feedback" checked/> Definitely
+          <br />
+          <input type="radio" name="feedback" /> Maybe
+          <br />
+          <input type="radio" name="feedback" /> Not sure
+        </div>
+        <br>
+        <div>
+          <label for="player">Who is your favorite Arsenal Player?</label>
+          <br />
+          <select name="Who is your favorite Arsenal player?" id="player">
+            <option value="" disabled selected hidden>
+              Select your favorite Arsenal player
+            </option>
+            <option value="Saka">saka</option>
+            <option value="Smith-rowe">Smith-Rowe</option>
+            <option value="Partey">Partey</option>
+            <option value="Gabriel">Gabriel</option>
+          </select>
+        </div>
+        <br>
+        <div>
+        <label for="lola">what will you like to see improved at Arsenal?(Check all that apply)</label>
+        <br>
+        <input type="checkbox"   name="Improvement" checked>Recruitment
+        <br>
+        <input type="checkbox"  name="Improvement">Communication
+        <br>
+        <input type="checkbox"  name="Improvement">Player performance
+        <br>
+        <input type="checkbox" name="Improvement">Well fair
+        </div>
+        <label for="suggestion"> Do you have any other Suggestions?</label> 
+        <br>
+        <textarea name="Suggestions" id="suggestion" cols="30" rows="10"></textarea>
       </form>
     </main>
   </body>
